@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ambeshtiwari.sqlogin.ManageActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Users:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/tv1"
+        android:layout_marginBottom="20sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:id="@+id/list"
+        android:layout_marginBottom="20sp"
+        />
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list"
+        android:hint="Enter username to delete"
+        android:id="@+id/u2del"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_toRightOf="@id/u2del"
+        android:layout_below="@id/list"
+        android:id="@+id/delButton"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ambeshtiwari.sqlogin.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="User Name" android:layout_gravity="center_horizontal"
+        android:id="@+id/username"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_green_light"
+        android:textColorHint="@android:color/white"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/password"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_green_light"
+        android:textColorHint="@android:color/white"
+        android:layout_margin="10sp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60sp"
+        android:onClick="logIn"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150sp"
+        android:layout_marginLeft="30sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not have an Account? Create one =>   "
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textSize="20sp"
+            android:id="@+id/signUp"
+            android:onClick="signUp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage users"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/manageUsers"
+        android:onClick="manageUsers"
+        />
+
+</LinearLayout>
